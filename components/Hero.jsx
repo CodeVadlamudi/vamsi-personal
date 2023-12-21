@@ -29,7 +29,7 @@ function Hero() {
           </div>
 
           <div className="text-center lg:text-start lg:w-1/2 mt-5">
-            <div className="mb-10 space-y-2x">
+            <div className="mb-10 space-y-2">
               <h4 className="text-lg font-medium text-gray-500">
                 Hi, Everyone!
               </h4>
