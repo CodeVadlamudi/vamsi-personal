@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {SocialIcon} from "react-social-icons";
 import {motion} from "framer-motion";
 import {Bars3BottomRightIcon, XMarkIcon} from "@heroicons/react/24/solid";
+import {EnvelopeIcon} from "@heroicons/react/24/outline";
 
 const Links = [
   {id: 1, name: "About", link: "#about"},
@@ -13,7 +14,7 @@ const Links = [
 function Header() {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="p-5 sm:p-4 shadow sticky top-0 bg-white z-10">
+    <header className="py-5 px-10 md:px-20 shadow sticky top-0 bg-white z-10">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex items-center justify-between">
           <motion.a
@@ -34,8 +35,7 @@ function Header() {
             Vamsi<span className="text-[#FF5C00]">.</span>
           </motion.a>
 
-          {/* Hero Social Icons */}
-          <motion.div
+          <motion.a
             initial={{
               x: 500,
               opacity: 0,
@@ -47,27 +47,12 @@ function Header() {
               x: 0,
               opacity: 1,
             }}
-            className="hidden sm:flex"
+            href="#contact"
+            className="hidden sm:flex items-center space-x-2"
           >
-            <SocialIcon
-              url="https://github.com/CodeVadlamudi"
-              bgColor="transparent"
-              fgColor="black"
-              target="_blank"
-            />
-            <SocialIcon
-              url="https://www.instagram.com/_vamsi_v/"
-              bgColor="transparent"
-              fgColor="black"
-              target="_blank"
-            />
-            <SocialIcon
-              url="https://www.youtube.com/channel/UC3iIMON2momGpXK2ib9gW-A"
-              bgColor="transparent"
-              fgColor="black"
-              target="_blank"
-            />
-          </motion.div>
+            <EnvelopeIcon className="w-7 h-7" />
+            <p className="text-base">Get a touch!</p>
+          </motion.a>
 
           <nav
             className={`absolute top-[68px] border-t flex flex-col space-y-4 bg-white p-5 left-0 w-full duration-300 sm:hidden ${

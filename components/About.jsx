@@ -37,28 +37,6 @@ function About() {
               has enabled me to elevate our web pages, thus advancing my
               proficiency in development.
             </p>
-
-            {/* Social Icons */}
-            <div className="sm:hidden">
-              <SocialIcon
-                url="https://github.com/CodeVadlamudi"
-                bgColor="transparent"
-                fgColor="black"
-                target="_blank"
-              />
-              <SocialIcon
-                url="https://www.instagram.com/_vamsi_v/"
-                bgColor="transparent"
-                fgColor="black"
-                target="_blank"
-              />
-              <SocialIcon
-                url="https://www.youtube.com/channel/UC3iIMON2momGpXK2ib9gW-A"
-                bgColor="transparent"
-                fgColor="black"
-                target="_blank"
-              />
-            </div>
           </div>
         </div>
       </div>
