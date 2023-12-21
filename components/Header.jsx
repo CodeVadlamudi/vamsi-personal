@@ -13,7 +13,7 @@ const Links = [
 function Header() {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="p-6 sm:p-4 shadow sticky top-0 bg-white z-10">
+    <header className="p-5 sm:p-4 shadow sticky top-0 bg-white z-10">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex items-center justify-between">
           <motion.a
@@ -29,11 +29,12 @@ function Header() {
               opacity: 1,
             }}
             href="/"
-            className="text-2xl font-semibold"
+            className="text-xl font-semibold"
           >
             Vamsi<span className="text-[#FF5C00]">.</span>
           </motion.a>
 
+          {/* Hero Social Icons */}
           <motion.div
             initial={{
               x: 500,
@@ -46,20 +47,30 @@ function Header() {
               x: 0,
               opacity: 1,
             }}
-            className="flex items-center"
+            className="hidden sm:flex"
           >
-            <div className="hidden sm:block">
-              <SocialIcon
-                network="email"
-                bgColor="transparent"
-                fgColor="black"
-              />
-            </div>
-            <p className="text-lg hidden md:block">Get in touch!</p>
+            <SocialIcon
+              url="https://github.com/CodeVadlamudi"
+              bgColor="transparent"
+              fgColor="black"
+              target="_blank"
+            />
+            <SocialIcon
+              url="https://www.instagram.com/_vamsi_v/"
+              bgColor="transparent"
+              fgColor="black"
+              target="_blank"
+            />
+            <SocialIcon
+              url="https://www.youtube.com/channel/UC3iIMON2momGpXK2ib9gW-A"
+              bgColor="transparent"
+              fgColor="black"
+              target="_blank"
+            />
           </motion.div>
 
           <nav
-            className={`absolute top-[84px] flex flex-col space-y-4 bg-white p-5 left-0 w-full duration-300 sm:hidden ${
+            className={`absolute top-[80px] border-t flex flex-col space-y-4 bg-white p-5 left-0 w-full duration-300 sm:hidden ${
               toggle ? "left-0" : "left-[-100%]"
             }`}
           >

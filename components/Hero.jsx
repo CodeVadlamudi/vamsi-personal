@@ -41,28 +41,6 @@ function Hero() {
               A passionate Front-End Developer based in Vijayawada, AP, India.
             </p>
 
-            {/* Hero Social Icons */}
-            <div>
-              <SocialIcon
-                url="https://github.com/CodeVadlamudi"
-                bgColor="transparent"
-                fgColor="black"
-                target="_blank"
-              />
-              <SocialIcon
-                url="https://www.instagram.com/_vamsi_v/"
-                bgColor="transparent"
-                fgColor="black"
-                target="_blank"
-              />
-              <SocialIcon
-                url="https://www.youtube.com/channel/UC3iIMON2momGpXK2ib9gW-A"
-                bgColor="transparent"
-                fgColor="black"
-                target="_blank"
-              />
-            </div>
-
             {/* Hero Navbar */}
             <nav className="space-x-2 sm:space-x-4 space-y-2 sm:space-y-0 hidden sm:block">
               {Links.map((link) => (

@@ -4,7 +4,7 @@ import {ArrowTopRightOnSquareIcon} from "@heroicons/react/24/outline";
 
 function ProjectsMore() {
   return (
-    <section className="my-14 sm:my-12 md:my-24 px-5 sm:px-10 xl:px-0">
+    <section className="py-14 sm:py-12 md:py-24 px-5 sm:px-10 xl:px-0 bg-zinc-100">
       <div className="max-w-screen-xl mx-auto space-y-10">
         <h2 className="text-xl font-semibold md:text-3xl text-center text-[#FF5C00]">
           Projects
@@ -38,10 +38,6 @@ function ProjectsMore() {
               </div>
             </div>
           ))}
-
-          <div className="bg-white overflow-hidden rounded shadow-md hover:shadow-xl duration-200 border h-40 flex items-center justify-center">
-            <h2 className="text-lg">Coming Soon</h2>
-          </div>
         </div>
       </div>
     </section>

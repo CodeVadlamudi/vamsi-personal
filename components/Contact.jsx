@@ -24,7 +24,7 @@ function Contact() {
             </h2>
             {/* Full Name */}
             <div>
-              <label htmlFor="name" className="text-lg font-medium">
+              <label htmlFor="name" className="font-medium">
                 Full Name
               </label>
               <input
@@ -43,7 +43,7 @@ function Contact() {
 
             {/* Phone Number */}
             <div>
-              <label htmlFor="phone" className="text-lg font-medium">
+              <label htmlFor="phone" className="font-medium">
                 Phone Number (WhatsApp)
               </label>
               <input
@@ -62,7 +62,7 @@ function Contact() {
             </div>
             {/* Email Address */}
             <div>
-              <label htmlFor="email" className="text-lg font-medium">
+              <label htmlFor="email" className="font-medium">
                 Email Address
               </label>
               <input
@@ -82,6 +82,9 @@ function Contact() {
 
             {/* Message */}
             <div>
+              <label htmlFor="message" className="font-medium">
+                Message
+              </label>
               <textarea
                 id="message"
                 name="Message"
@@ -111,7 +114,7 @@ function Contact() {
 
           <div className="flex flex-col space-y-4 mt-10 md:ml-20">
             <h3 className="text-xl font-medium underline">Address</h3>
-            <address className="text-xl">
+            <address className="text-lg">
               Vijayawada, NTR District
               <br />
               Andhra Pradesh, India
