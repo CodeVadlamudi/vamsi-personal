@@ -70,7 +70,7 @@ function Header() {
           </motion.div>
 
           <nav
-            className={`absolute top-[80px] border-t flex flex-col space-y-4 bg-white p-5 left-0 w-full duration-300 sm:hidden ${
+            className={`absolute top-[68px] border-t flex flex-col space-y-4 bg-white p-5 left-0 w-full duration-300 sm:hidden ${
               toggle ? "left-0" : "left-[-100%]"
             }`}
           >

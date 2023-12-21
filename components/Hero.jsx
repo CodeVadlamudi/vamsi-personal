@@ -28,18 +28,22 @@ function Hero() {
             />
           </div>
 
-          <div className="text-center lg:text-start lg:w-1/2 space-y-2 mt-5">
-            <h4 className="text-lg font-medium text-gray-500">Hi, Everyone!</h4>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
-              I am <span className="text-[#FF5C00]">{text}</span>
-              <Cursor cursorColor="#FF5C00" />
-            </h1>
-            <h3 className="uppercase font-semibold tracking-[4px] text-black/60 lg:text-lg">
-              React Front-End Developer
-            </h3>
-            <p>
-              A passionate Front-End Developer based in Vijayawada, AP, India.
-            </p>
+          <div className="text-center lg:text-start lg:w-1/2 mt-5">
+            <div className="mb-10 space-y-2x">
+              <h4 className="text-lg font-medium text-gray-500">
+                Hi, Everyone!
+              </h4>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+                I am <span className="text-[#FF5C00]">{text}</span>
+                <Cursor cursorColor="#FF5C00" />
+              </h1>
+              <h3 className="uppercase font-semibold tracking-[4px] text-black/60 lg:text-lg">
+                React Front-End Developer
+              </h3>
+              <p>
+                A passionate Front-End Developer based in Vijayawada, AP, India.
+              </p>
+            </div>
 
             {/* Hero Navbar */}
             <nav className="space-x-2 sm:space-x-4 space-y-2 sm:space-y-0 hidden sm:block">

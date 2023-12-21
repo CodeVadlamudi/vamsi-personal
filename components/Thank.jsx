@@ -2,9 +2,9 @@ import React from "react";
 
 function Thank() {
   return (
-    <section className="absolute top-0 w-full h-full bg-gray-500/50 flex items-center justify-center">
-      <div className="bg-white w-96 h-80 p-10 flex items-center justify-center flex-col space-y-5 rounded-md shadow-lg">
-        <img src="./images/tick.png" alt="tick img" className="w-40 h-40" />
+    <section className="fixed top-0 w-full h-full bg-gray-500/80 flex items-center justify-center p-5">
+      <div className="bg-white w-96 h-72 flex items-center justify-center flex-col space-y-5 rounded-md shadow-lg">
+        <img src="./images/tick.png" alt="tick img" className="w-28 h-28" />
         <p className="text-lg font-medium">Thanks for your email!</p>
 
         <a

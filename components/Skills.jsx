@@ -19,6 +19,7 @@ function Skills() {
               initial={{opacity: 0}}
               whileInView={{opacity: 1}}
               transition={{duration: 1.5}}
+              viewport={{once: true}}
               key={brand.id}
               className="shadow-md border p-5 sm:p-8 md:p-10 h-24 w-24 sm:w-36 sm:h-36 md:w-40 md:h-40 flex items-center justify-center rounded-lg cursor-pointer bg-white relative group overflow-hidden"
             >
